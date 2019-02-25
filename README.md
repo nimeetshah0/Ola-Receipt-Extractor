@@ -1,5 +1,7 @@
 # Ola-Receipt-Extractor
-Extract Ola cabs receipts from Gmail
+Extract Ola cabs receipts from Gmail and convert them into PDF
+
+Use case: Submit conveyance proofs for Income Tax
 
 Uses NodeJS and Puppeteer
 
