@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 
 const EMAIL_ADDRESS = '';
 const PASSWORD = '';
+const UPTO_DATE = 'yyyy/mm/dd';
 
 
 (async () => {
@@ -30,7 +31,7 @@ const PASSWORD = '';
     
 
     const searchbox = await page.$('input[name="q"]');
-    await searchbox.type('ola receipt from: ola share after: 2018/04/01');
+    await searchbox.type('ola receipt from: ola share after: ' + UPTO_DATE);
     await searchbox.press('Enter');
     await page.waitForNavigation({ waitUntil: 'networkidle2' });
 
